@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<script src="js/jquery-2.1.3.min.js"></script>
+<link rel="stylesheet" href="css/sample.css">
+<title>おみくじ</title>
+
+
+</head>
+
+<body>
+
+<header>
+
+        <img src="omikuji.png"  width ="100";> 
+
+        
+ 
+</header>
+
+       <button id ="pull">おみくじを引く</button>
+
+       <!-- どうしてもボタンを真ん中にするやり方が出来ませんでした。 -->
+
+        <p id="echo"></p>
+
+<script>
+
+    // クリックイベントのブロック
+
+    const pull = document.querySelector("#pull");
+
+    pull.onclick = function(){
+
+    
+    // 乱数を作る
+
+        const num = Math.ceil(Math.random() *5);　
+
+        alert("おみくじが出ました!さて結果は?")
+
+    // 乱数をIF分岐処理で分ける
+    // 条件に合っていればAlert（）で表示
+
+
+    if(num==1){
+        // alert("大吉");
+        const pull = document.querySelector("#echo");
+        pull.innerHTML = '<img src = "daikichi.png" width = "150" magin-bottom ="auto" >'; 
+        // 上書きできる
+        pull.style.color = "#ff0000";
+    }
+
+    if(num==2){
+        // alert("中吉");
+         const pull = document.querySelector("#echo");
+         pull.innerHTML = '<img src = "chuukichi.png" width = "150" magin-bottom ="auto" >'; 
+        // 上書きできる
+        pull.style.color = "#ff9a00";
+    }
+
+    if(num==3){
+        // alert("小吉");
+        const pull = document.querySelector("#echo");
+        pull.innerHTML = '<img src = "syoukichi.png" width = "150" magin-bottom ="auto" >'; 
+        // 上書きできる
+        pull.style.color = "#ff0000";
+    }
+
+    if(num==4){
+        // alert("吉");
+        const pull = document.querySelector("#echo");
+        pull.innerHTML = '<img src = "kichi.png" width = "150" magin-bottom ="auto" >'; 
+        // 上書きできる
+        pull.style.color = "#ff0000";
+    }
+
+    if(num==5){
+        // alert("凶");
+        const pull = document.querySelector("#echo");
+        pull.innerHTML = '<img src = "kyou.png" width = "150" magin-bottom ="auto" >'; 
+        // 上書きできる
+        pull.style.color = "#009aff";
+    }
+
+    if(num==6){
+        // alert("凶");
+        const pull = document.querySelector("#echo");
+        pull.innerHTML = '<img src = "daikyou.png" width = "150" magin-bottom ="auto" >'; 
+        // 上書きできる
+        pull.style.color = "#0000ff";
+    }
+
+    console.log(pull.innerHTML);
+    
+    document.getElementById("pull").innerHTML = "やり直す";
+}
+
+
+
+</script>
+
+</body>
+
+</html>
