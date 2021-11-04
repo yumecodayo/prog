@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/styles.css">
+<head>
+
+    <header>
+        <h1 style="text-align: center; color: #ffffff; text-shadow: 1px 0 0 black,
+        0 1px 0 black, -1px 0 0 black, 0 -1px 0 black;" >じゃんけんゲーム</h1>
+    </header>
+
+    <script>
+
+    function R_Click(p_janken_r) {
+      
+        let janken = ['グー','チョキ','パー',];
+        let janken_r = Math.floor( Math.random() * 3);
+        let p_janken = ['グー','チョキ','パー'];
+
+            if (janken_r === p_janken_r) {
+                Result_end = "【あいこ】です";
+            } else if(p_janken_r === 0 && janken_r === 1) {
+                Result_end = "あなたの【勝ち】";
+            }else if(p_janken_r === 1 && janken_r === 2) {
+                Result_end = "あなたの【勝ち】";
+            }else if(p_janken_r === 2 && janken_r === 0) {
+                Result_end = "あなたの【勝ち】";
+            }else {
+                Result_end = "あなたの【負け】";
+            }
+
+            document.getElementById("Rejan1").innerHTML = p_janken[p_janken_r] +"を選択。結果は？";
+            document.getElementById("Rejan2").innerHTML = "相手は" + janken[janken_r] +"を出した。"+ Result_end;
+
+        }
+
+    </script>
+</head>
+<body bgcolor="#ffd284">
+    <p style="text-align:center"> 
+    <button style="background-color:#ffffa8;" onclick="R_Click(0);"> グー</button>
+    <button style="background-color:#ffa8a8;" onclick="R_Click(1);"> チョキ</button>
+    <button style="background-color:#a8ffff;" onclick="R_Click(2);"> パー</button>
+    <div style="text-align: center;" id="Rejan1"></div>
+    <div style="text-align: center;" id="Rejan2"></div>
+</body>
+</html>
