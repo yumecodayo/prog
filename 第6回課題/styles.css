@@ -1,0 +1,27 @@
+html {
+  font-size: 20px;
+}
+
+body,html {
+  width: 990px;
+  margin: 2rem auto;
+  font-family: serif;
+}
+
+
+
+
+#table {
+  background-color: papayawhip;
+  width: 50%;
+  height: 400px;
+  border-radius: 1rem;
+  margin-top: 2rem;
+}
+
+
+li {
+  margin: 2rem 2rem 2rem 0;
+
+}
+
