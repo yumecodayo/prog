@@ -1,0 +1,36 @@
+html {
+    font-size: 25px;
+    background-color: rgb(215, 221, 247);
+    color: rgb(63, 52, 52);
+    text-align: center;
+
+
+  }
+
+
+  h1 {
+    position: relative;
+    background-color: hsl(59, 95%, 76%);
+    padding: 10px;
+    border-radius: 30px;
+    max-width: 100pc;
+    }
+
+  li{
+      display: inline-block;
+      padding: 10pt;
+    }
+     
+      #Question{
+        max-width: 300px;
+        margin: 0 auto;
+        padding: auto;
+      }
+
+      button{
+          background-attachment: fixed;
+          background-color: hsl(59, 95%, 76%);
+          padding: 2px 15px;
+          margin: 5px;
+       
+        }

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="qize.css">
+
+    <title>クイズアプリ</title>
+</head>
+<body>
+<h1>クイズゲーム</h1>
+<!--クイズのの表示-->
+<h2 id="_question">ここに問題が表示されます。</h2>
+<!--回答-->
+<ul>
+<li id="_ans1">１</li>
+<li id="_ans2">２</li>
+<li id="_ans3">３</li>
+</ul>
+<button type="button" id="_answer_1" onclick="Answer_Check(1)">1</button>
+<button type="button" id="_answer_2" onclick="Answer_Check(2)">2</button>
+<button type="button" id="_answer_3" onclick="Answer_Check(3)">3</button>
+
+<script>
+
+let Question = [
+["Q.通るときには閉まって、通らないときには開いているものは何？",
+"1. 踏切",
+"2. 冷蔵庫",
+"3. 洗濯機",
+"1"],
+["Q.話すことがとても好きな道具は何？",
+"1. スプーン",
+"2. しゃもじ",
+"3. シャベル",
+"3"],
+["Q.世界の真ん中にいる虫は何？",
+"1. てんとう虫",
+"2. 蚊",
+"3. カマキリ",
+"2"],
+["Q.ひっくり返かえると、軽かるくなる動物どうぶつは何？",
+"1. 蛙",
+"2. イルカ",
+"3. ねこ",
+"2"],
+["Q.貝は貝でも、お風呂に入ってる貝ってどんなカイ？",
+"1. 硬い",
+"2. 冷たい",
+"3. あったかい",
+"3"],
+["Q.口から出てくる「くび」って何？",
+"1. ことば",
+"2. 欠伸",
+"3. びっくり",
+"2"],
+];
+// 初期変数定義
+// 問題を表示するオブジェクトを取得する
+let Q = document.getElementById('_question');
+// 問題を表示するオブジェクトを取得する
+let A1 = document.getElementById('_ans1');
+let A2 = document.getElementById('_ans2');
+let A3 = document.getElementById('_ans3');
+let A4 = document.getElementById('_ans4');
+let A5 = document.getElementById('_ans5');
+let A6 = document.getElementById('_ans6');
+
+
+
+// 正解数を保持する値
+let Correct = 0;
+// 現在の問題数
+let Qcnt = 0;
+// 問題を画面に表示する処理
+function Q_Set() {
+Q.textContent = Question[Qcnt][0];
+A1.textContent = Question[Qcnt][1];
+A2.textContent = Question[Qcnt][2];
+A3.textContent = Question[Qcnt][3];
+A4.textContent = Question[Qcnt][4];
+A5.textContent = Question[Qcnt][5];
+A6.textContent = Question[Qcnt][6];
+
+
+};
+// 画面に表示
+Q_Set();
+// 回答ボタンを押したときの処理
+function Answer_Check(ans) {
+if(ans == Question[Qcnt][4]) {
+alert("正解");
+Correct++;
+} else {
+alert("不正解");
+}
+Qcnt++;
+if (Qcnt == Question.length) {
+    
+    Q.textContent = "終了〜！正解数は" + Correct + "!!";
+
+A1.textContent = "";
+A2.textContent = "";
+A3.textContent = "";
+} else {
+// 画面に表示
+Q_Set();
+}
+}
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
