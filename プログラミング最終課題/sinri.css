@@ -1,0 +1,231 @@
+
+/* 全体設定 */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Yu Gothic", YuGothic, sans-serif;
+  background-image: url(haikei.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+
+
+.choose_box {
+  position: relative;
+  width: 100%;
+}
+ .choose_box p {
+  margin-top: 5%;
+  margin-bottom: 10%;
+    font-size: 20px;
+    display: block;
+    font-weight: 600;
+    text-align: center;
+  }
+
+.choose_box li {
+  display: inline-block;
+  width: 90%;
+  margin-top: 20px;
+  list-style: none;
+}
+
+
+.choose_box ul li a {
+  width: 100%;
+  color: rgb(255, 255, 255);
+  display: block;
+  padding: 10px 10px;
+  text-align: center;
+  background-color: #aeacac;
+  font-weight: 600;
+  font-size: 16px;
+  border: 2px solid #00000065;
+  text-decoration: none;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.choose_box ul li a:hover {
+   background-color: rgb(255, 255, 255);
+  color: #3a3a3a;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -o-transition: 0.7s;
+    transition: 0.7s;
+}
+
+/* パーソナルカラー診断 */
+
+.app-theme p {
+  color: #2f2f2f;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  font-size: 70px;
+}
+
+
+.fit {
+  left: 0px;
+  top: 20px;
+  width: 100%;
+}
+
+.fit p {
+  margin-top: 3%;
+  margin-bottom: 3%;
+    font-size: 35px;
+    display: block;
+    font-weight: 600;
+    text-align: center;
+  }
+
+
+/* イエローベース */
+
+.result_type0 h4 {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    background-color: #e4b829;
+  }
+
+  
+    /* ブルーベース */
+
+
+  .result_type1 h4 {
+      width: 50%;
+      margin: auto;
+      padding: 20px;
+      text-align: center;
+      font-size: 45px;
+      font-weight: 600;
+      color: #fff;
+      text-align: center;
+      background-color: #5d87d6;
+    }
+
+
+    /* あなたのパーソナルカラーは？ */
+
+  .result_theme p  {
+      margin-top: 5%;
+      margin-bottom: 2%;
+      text-align: center;
+      font-size: 35px;
+  }
+
+
+  .result_discription0 {
+      text-align: center;
+      margin-bottom: 5%;
+     
+  }
+  .result_discription1 {
+      text-align: center;
+      margin-bottom: 5%;
+     
+
+  }
+
+  /* 黄カラーが似合う */
+  .result_discription0 h2 {
+      color: #dd8424;
+      text-align: center;
+      padding-top: auto;
+      padding-bottom: auto;
+   
+  }
+
+  /* 青カラーが似合う */
+
+  .result_discription1 h2 {
+      color: #145adc;
+      text-align: center;
+      padding-top: auto;
+      padding-bottom: auto;
+     
+  }
+
+  /* イエベさんにおすすめ */
+
+  .result_discription0 p {
+    font-family: "游ゴシック体", YuGothic;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: auto;
+    padding: 10px;
+    text-align: center;
+    color: #343434;
+    font-size: 30px;
+    line-height: 20px;
+    border-radius: 5px;
+  }
+
+  /* ブルベさんにおすすめ */
+
+
+  .result_discription1 p {
+    font-family: "游ゴシック体", YuGothic;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    padding: 10px;
+    text-align: center;
+    color: #303030;
+    font-size: 30px;
+    line-height: 35px;
+    border-radius: 5px;
+  }
+
+
+  .return-btn {
+    margin-top: 10%;
+      margin-left: 35%;
+      margin-right: 35%;
+      width: 20%;
+      margin-bottom: 100px;
+     
+  }
+
+  /* リンク画像の設定 */
+
+.link{
+
+  margin-left: 25%;
+  display: inline;
+}
+
+
+  /* 以下ボタンの設定 */
+
+  .return {
+    display: inline-block;
+    text-align: center;
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      background-color: #999999;
+      width: 100%;
+      padding: 5px 5px;
+      border: 2px solid #656565 ;
+      border-radius: 9px;
+      
+  }
+
+  .return:hover {
+      border: 1px solid #5e5e5e ;
+      background-color: #fff;
+      color: #1f1f1f;
+      transition: 0.5s;
+    
+
+  }
